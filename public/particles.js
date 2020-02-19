@@ -24,16 +24,16 @@ class Particle {
         // Velocity
         this.vel = createVector(random(-2, 2), random(-2, 2));
         // Size
-        this.size = 10;
+        this.size = 5;
     };
 
     // Draw the particle
     draw(n) {
         noStroke();
         if (n % 2 === 0) {
-            fill('rgba(255, 0, 0, 0.5)');
+            fill('rgba(255, 255, 255, 0.5)');
         } else {
-            fill('rgba(0, 0, 255, 0.5)');
+            fill('rgba(250, 255, 205, 0.5)');
         }
         circle(this.pos.x, this.pos.y, this.size);
     };
